@@ -1,0 +1,139 @@
+body {
+  background-color: #faa381;
+  font-family: "Iceland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  background-color: #f5cda7;
+  width: 90%;
+  margin: 10px auto;
+}
+
+h1 {
+  padding: 15px;
+  color: black;
+  text-align: center;
+  font-size: xxx-large;
+}
+
+h2,
+h3 {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.fill-out {
+  display: flex;
+  justify-content: center;
+}
+
+#db-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#console-game,
+#title-year,
+#publishing {
+  width: 100%;
+}
+
+#add-remove {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: baseline;
+}
+
+label {
+  margin: 10px;
+  font-size: 24px;
+}
+
+input,
+select {
+  padding: 8px;
+  margin: 5px;
+  width: 80%;
+  background-color: white;
+  color: rgba(171, 171, 171, 0.722);
+  font-size: 24px;
+}
+
+#genres {
+  column-count: 3;
+  column-gap: 5%;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+#genres > input {
+  max-width: 18px;
+}
+
+#genres > label {
+  width: 100%;
+  font-size: 30px;
+}
+
+#button-sorting {
+  margin: 10px auto;
+}
+
+#button-sorting > h3 {
+  text-align: center;
+}
+
+#add-game,
+#remove-game {
+  margin: 5px;
+  font-size: 24px;
+  border: 2px solid black;
+  font-family: "Iceland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  padding: 5px;
+  margin: 10px;
+  font-size: 24px;
+  border: 2px solid black;
+  font-family: "Iceland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button:hover {
+  background-color: rgba(255, 222, 230, 0.605);
+  border: 2px solid red;
+}
+
+table,
+tbody,
+tr,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+table {
+  margin: 10px auto;
+  width: 80%;
+  background-color: #f8f7cb;
+}
+
+th {
+  padding: 5px;
+  font-size: 24px;
+}
+
+.trash-icon {
+  width: 20px;
+}
+
+footer {
+  text-align: center;
+}

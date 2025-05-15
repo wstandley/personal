@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iceland&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Video Game Database</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Video Game Database</h1>
+      </header>
+      <main>
+        <!-- Form -->
+        <h2>Input Your Games Information Below</h2>
+        <form action="sql/add_game.php" method="POST">
+          <div class="fill-out">
+            <div id="console-game">
+              <label for="console">Console:</label>
+              <br />
+              <input
+                type="text"
+                id="console"
+                name="console"
+                value="Nintendo Switch"
+              />
+              <br />
+              <label for="series">Game Series:</label>
+              <br />
+              <input
+                type="text"
+                id="series"
+                name="series"
+                value="The Legend of Zelda"
+              />
+            </div>
+            <div id="title-year">
+              <label for="title">Game Title:</label>
+              <br />
+              <input
+                type="text"
+                id="title"
+                name="title"
+                value="Breathe of the Wild"
+              />
+              <br />
+              <label for="release">Release Year:</label>
+              <br />
+              <input type="text" id="release" name="release" value="2017" />
+            </div>
+            <div id="publishing">
+              <label for="publisher">Publisher:</label>
+              <br />
+              <input
+                type="text"
+                id="publisher"
+                name="publisher"
+                value="Nintendo"
+              />
+            </div>
+          </div>
+          <div>
+            <label>Game Genre(s):</label>
+            <br />
+            <div id="genres"></div>
+            <div id="add-remove">
+              <button type="submit" id="add-game">Add Game</button>
+            </div>
+          </div>
+        </form>
+        <!-- End Form -->
+
+        <section id="db-section">
+          <div id="button-sorting">
+            <h3>Filter By:</h3>
+            <div id="fil-buttons">
+              <button id="console-button">Console</button>
+              <button id="series-button">Series</button>
+              <button id="title-button">Title</button>
+              <button id="year-button">Year</button>
+              <button id="publisher-button">Publisher</button>
+              <button id="genre-button">Genre</button>
+            </div>
+          </div>
+          <div id="entries">
+            <table id="table">
+              <thead>
+                <tr>
+                  <th>Console</th>
+                  <th>Game Title</th>
+                  <th>Year</th>
+                  <th>Publisher</th>
+                  <th>Game Genres</th>
+                  <th class="trashRows"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Insert Added Games Here -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+      <footer>&copy;2025 Will Standley</footer>
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
